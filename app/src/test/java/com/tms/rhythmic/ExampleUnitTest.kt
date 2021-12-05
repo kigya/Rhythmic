@@ -1,4 +1,4 @@
-package com.tms.rhythmion
+package com.tms.rhythmic
 
 import org.junit.Test
 

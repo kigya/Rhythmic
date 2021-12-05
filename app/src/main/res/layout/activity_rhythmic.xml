@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ic_background"
-    tools:context=".MainActivity">
+    tools:context=".mvp.RhythmicActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -53,7 +53,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:contentDescription="@string/line_under_title_account"
-            android:src="@drawable/line_account"></ImageView>
+            android:src="@drawable/line_account"/>
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -198,9 +198,9 @@
                 android:layout_centerVertical="true"
                 android:width="180dp"
                 android:background="@drawable/button_style"
+                android:backgroundTint="@color/gold_light"
                 android:text="@string/continue_as_guest"
-                tools:ignore="RelativeOverlap"
-                android:backgroundTint="@color/gold_light"/>
+                tools:ignore="RelativeOverlap" />
 
             <ImageButton
                 android:id="@+id/next_button"
@@ -212,7 +212,29 @@
                 android:contentDescription="@string/next_button"
                 android:src="@drawable/btn_primary" />
         </RelativeLayout>
-
     </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:indeterminateTint="@color/gold_light" />
+
+    <View
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_opacity"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:visibility="gone"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

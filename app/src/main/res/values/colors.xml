@@ -11,4 +11,5 @@
     <color name="white_opacity">#3EFFFFFF</color>
     <color name="white_light_opacity">#61FFFFFF</color>
     <color name="gray">#FFE0E0E0</color>
+    <color name="black_opacity">#80000000</color>
 </resources>

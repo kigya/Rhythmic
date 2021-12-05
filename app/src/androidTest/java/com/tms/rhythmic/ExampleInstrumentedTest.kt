@@ -1,4 +1,4 @@
-package com.tms.rhythmion
+package com.tms.rhythmic
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
