@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Rhythmic</string>
+    <string name="rhrythmic_logo" />
+    <string name="create_an">Create an</string>
+    <string name="account">Account</string>
+    <string name="line_under_title_account">Line under title account</string>
+    <string name="already_a_member">Already a member?</string>
+    <string name="log_in">Log in</string>
+    <string name="name">Name</string>
+    <string name="user_icon">User icon</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="next_button">Next button</string>
+    <string name="continue_as_guest">Continue as guest</string>
+</resources>
