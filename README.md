@@ -1,5 +1,5 @@
 # Rhythmic
-AuthScreen using Model View Presenter pattern
+AuthScreen using MVP and MVVM patterns
 
 ### Demo:
 
