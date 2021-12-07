@@ -13,9 +13,9 @@ import com.google.android.material.textfield.TextInputLayout
 import com.tms.rhythmic.R
 import com.tms.rhythmic.success.SuccessActivity
 
-class RhythmicActivity : AppCompatActivity(), RhythmicView {
+class RhythmicMvpActivity : AppCompatActivity(), RhythmicMvpView {
 
-    private val rhythmicPresenter: RhythmicPresenter = RhythmicPresenter(this)
+    private val rhythmicPresenter: RhythmicMvpPresenter = RhythmicMvpPresenter(this)
     lateinit var progress: ProgressBar
     lateinit var overlayBlack: View
 

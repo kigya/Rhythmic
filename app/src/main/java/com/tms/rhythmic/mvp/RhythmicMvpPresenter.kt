@@ -3,8 +3,8 @@ package com.tms.rhythmic.mvp
 import android.os.Handler
 import android.os.Looper
 
-class RhythmicPresenter(private val view: RhythmicView) {
-    private val rhythmicAuthModel: RhythmicAuthModel = RhythmicAuthModel()
+class RhythmicMvpPresenter(private val view: RhythmicMvpView) {
+    private val rhythmicAuthModel: RhythmicMvpAuthModel = RhythmicMvpAuthModel()
     fun onLoginClicked(name: String, email: String, password: String) {
         Handler(Looper.getMainLooper()).postDelayed({
             val isSuccess = rhythmicAuthModel.onLoginClicked(name, email, password)

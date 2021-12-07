@@ -1,4 +1,4 @@
-package com.tms.rhythmic.mvp
+package com.tms.rhythmic.mvvm
 
 import android.util.Patterns
 
@@ -17,5 +17,4 @@ class RhythmicAuthModel {
             Patterns.EMAIL_ADDRESS.matcher(this).matches()
 
     private fun CharSequence?.isValidPassword() = !isNullOrEmpty() && this.length > 5
-
 }

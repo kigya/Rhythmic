@@ -1,5 +1,5 @@
 package com.tms.rhythmic.mvp
 
-interface RhythmicView {
+interface RhythmicMvpView {
     fun onLoginResult(isSuccessful: Boolean )
 }

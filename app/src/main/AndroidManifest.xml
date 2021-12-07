@@ -11,7 +11,7 @@
         android:theme="@style/Theme.Rhythmion"
         android:fullBackupContent="@xml/backup_descriptor">
         <activity
-            android:name="com.tms.rhythmic.mvp.RhythmicActivity"
+            android:name=".mvvm.RhythmicActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
