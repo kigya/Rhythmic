@@ -1,9 +1,10 @@
-package com.tms.rhythmic.mvvm
+package com.tms.rhythmic.mvvm.music
 
 import android.os.Handler
 import android.os.Looper
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.tms.rhythmic.mvvm.model.RhythmicAuthModelService
 
 class RhythmicViewModel: ViewModel() {
     val isLoginSuccessLiveData = MutableLiveData<Unit>()
@@ -11,7 +12,7 @@ class RhythmicViewModel: ViewModel() {
     val showProgressLiveData = MutableLiveData<Unit>()
     val hideProgressLiveData = MutableLiveData<Unit>()
 
-    private val rhythmicAuthModel: RhythmicAuthModel = RhythmicAuthModel()
+    private val rhythmicAuthModel: RhythmicAuthModelService = RhythmicAuthModelService()
     fun onLoginClicked(name: String, email: String, password: String) {
         showProgressLiveData.postValue(Unit)
         Handler(Looper.getMainLooper()).postDelayed({

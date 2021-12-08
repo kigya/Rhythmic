@@ -1,4 +1,4 @@
-package com.tms.rhythmic.mvvm
+package com.tms.rhythmic.mvvm.music
 
 import android.content.Intent
 import android.os.Bundle
