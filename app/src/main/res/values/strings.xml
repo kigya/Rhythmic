@@ -13,4 +13,5 @@
     <string name="next_button">Next button</string>
     <string name="continue_as_guest">Continue as guest</string>
     <string name="success">Success</string>
+    <string name="confirm_password">Confirm Password</string>
 </resources>
